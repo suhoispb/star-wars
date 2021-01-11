@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Spinner from '../spinner';
+import Spiner from '../spiner';
 import ErrorIndicator from '../error-indicator';
 
 const withData = (View) => {
@@ -47,7 +47,7 @@ const withData = (View) => {
       const { data, loading, error } = this.state;
 
       if (loading) {
-        return <Spinner />;
+        return <Spiner />;
       }
 
       if (error) {
